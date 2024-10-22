@@ -13,7 +13,7 @@ struct ContentView: View {
   @State private var isFetchingMore: Bool = false
   @State private var chatContents: [Chat] = []
   
-  let fetchCount: Int = 50
+  private let fetchCount: Int = 50
   var body: some View {
     VStack {
       ScrollViewReader { scrollViewProxy in
